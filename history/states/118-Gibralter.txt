@@ -4,8 +4,6 @@ state=
 	name="STATE_118"
 	manpower=21372
 	
-	impassable = yes
-
 	state_category = enclave
 	history={
 		owner = ENG
@@ -20,10 +18,8 @@ state=
 		}
 		add_claim_by = SPR
 	}
-
-	# ANZ - Added 13228
 	provinces={
-		4135 13228
+		4135
 	}
 
 	local_supplies=0.0 

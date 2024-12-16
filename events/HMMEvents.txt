@@ -1,0 +1,31 @@
+add_namespace = hmm
+
+news_event = {
+	id = hmm.1
+	title = hmm.1.t
+	desc = hmm.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_for_sender = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = hmm.1.a
+	}
+}
+
+news_event = {
+	id = hmm.2
+	title = hmm.2.t
+	desc = hmm.2.d
+	picture = GFX_report_event_generic_read_write
+
+	fire_for_sender = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+    	
+	option = {
+		name = hmm.2.a
+	}
+}

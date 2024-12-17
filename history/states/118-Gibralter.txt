@@ -4,8 +4,6 @@ state=
 	name="STATE_118"
 	manpower=21372
 	
-	impassable = yes
-
 	state_category = enclave
 	history={
 		owner = ENG

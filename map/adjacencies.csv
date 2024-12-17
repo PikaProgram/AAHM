@@ -135,6 +135,10 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7304;4360;sea;8614;-1;-1;-1;-1;;New Foundland-Strait
 5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
+2776;4985;;-1;-1;-1;-1;-1;ETHIOPIA_STRAIT;Ethiopia East # ANZCHANGE - Ethiopia Strait  
+2776;5074;;-1;-1;-1;-1;-1;ETHIOPIA_STRAIT;Ethiopia West
+5539;12299;;-1;-1;-1;-1;-1;MALAYASIA_STRAIT;Malayasia North # ANZCHANGE - Malayasia Strait
+5539;12184;;-1;-1;-1;-1;-1;MALAYASIA_STRAIT;Malayasia South
 2455;2431;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
 2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz

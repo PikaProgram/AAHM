@@ -29,3 +29,6 @@
  hmm.1.t:0 "Axis Win"
  hmm.1.d:0 "Axis Win"
  hmm.1.a:0 "Let me take a save"
+
+ map_straits:0 "Strait Of Malacca"
+ map_straits:1 "Strait Of Ethiopia"

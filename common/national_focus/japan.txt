@@ -154,7 +154,7 @@
 		y = 1
 		relative_position_id = JAP_greater_east_asian_co_prosperity_sphere
 
-		cost = 10
+		cost = 1
 
 		available = { 
 			is_subject = no 
@@ -442,7 +442,7 @@
 		y = 1
 		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 3
@@ -482,7 +482,7 @@
 
 		will_lead_to_war_with = PHI
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			base = 1
@@ -550,7 +550,7 @@
 		will_lead_to_war_with = MAL
 		will_lead_to_war_with = INS
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			base = 10

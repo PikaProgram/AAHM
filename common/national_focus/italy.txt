@@ -4224,10 +4224,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_preserve_army_traditions
 		cost = 10
-		available = {
-			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
-			#NTH_Manu: Should probably also require a completed focus in any of the ME political paths, so that it can unlock appropriate generals
-		}
 
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 

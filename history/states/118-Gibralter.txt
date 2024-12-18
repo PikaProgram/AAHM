@@ -15,6 +15,11 @@ state=
 				naval_base = 5
 				coastal_bunker = 2
 			}
+			# ANZ - Added Naval Bases (Ports) & Coastal Bunker (Naval Forts)
+			13228 = {
+				naval_base = 5
+				coastal_bunker = 2
+			}
 		}
 		add_claim_by = SPR
 	}

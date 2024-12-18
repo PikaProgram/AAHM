@@ -4,8 +4,6 @@ state=
 	name="STATE_118"
 	manpower=21372
 	
-	impassable = yes
-
 	state_category = enclave
 	history={
 		owner = ENG
@@ -14,6 +12,11 @@ state=
 			infrastructure = 3
 			air_base = 2
 			4135 = {
+				naval_base = 5
+				coastal_bunker = 2
+			}
+			# ANZ - Added Naval Bases (Ports) & Coastal Bunker (Naval Forts)
+			13228 = {
 				naval_base = 5
 				coastal_bunker = 2
 			}

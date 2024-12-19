@@ -586,11 +586,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1937
+		start_year = 1938
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = 5 }
+			position = { x = 2 y = @1937 }
 		}
 
 		ai_will_do = {
@@ -678,7 +678,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = 7 }
+			position = { x = 2 y = @1940 }
 		}
 
 		on_research_complete = {

@@ -71,11 +71,11 @@ upgrades = {
 			}
 			10 = {
 				steel = 1
-				chromium = 1
+				#chromium = 0
 			}
 			15 = {
 				steel = 1
-				chromium = 2
+				#chromium = 0
 			}
 		}
 
@@ -83,11 +83,10 @@ upgrades = {
 		#armor_value = 0.085
 		add_stats = {
 			maximum_speed = -0.1
+			breakthrough = 1.25
 			build_cost_ic = 0.2
 			armor_value = 2.5
-			# ORIGINAL:
-			# armor_value = 2.5
-			# breakthrough = 1.25
+
 		}
 	}
 

@@ -12,6 +12,7 @@ JAP_Skip_China_cat = {
 
         fire_only_once = yes
         cost = 0
+        days_remove = 500  # Set timer for 500 days
 
         complete_effect = {
             add_threat = 21
@@ -29,6 +30,14 @@ JAP_Skip_China_cat = {
                 air_experience = 100
             }
         }
+        
+        complete_effect = {
+            add_ideas = JAP_post_china
+        }
+
+        # Define the effect that will occur when the timer ends
+        remove_effect = {
+            remove_ideas = JAP_post_china  # Remove the idea after 500 days
         }
     }
 }

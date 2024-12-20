@@ -6,7 +6,6 @@ JAP_Skip_China_cat = {
             # Conditions for Japan to take this decision
             tag = JAP
             controls_state = 605
-            
             AND = {
                 date > 1937.1.1
                 date < 1937.9.1
@@ -15,6 +14,7 @@ JAP_Skip_China_cat = {
 
         fire_only_once = yes
         cost = 0
+        days_remove = 90  # Set timer for 240 days
 
         complete_effect = {
             # Set compliance of 90 for Japan in each specified state
@@ -68,7 +68,13 @@ JAP_Skip_China_cat = {
             745 = { set_compliance = 90 }
         }
         
+        complete_effect = {
+            add_ideas = JAP_collab_cost
+        }
 
         # Define the effect that will occur when the timer ends
+        remove_effect = {
+            remove_ideas = JAP_collab_cost  # Remove the idea after 240 days
+        }
     }
 }

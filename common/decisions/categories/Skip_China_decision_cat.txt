@@ -1,0 +1,7 @@
+	JAP_Skip_China_cat = {
+		allowed = {
+			original_tag = JAP
+		}
+	
+		priority = 1
+	}

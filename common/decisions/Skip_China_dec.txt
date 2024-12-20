@@ -1,0 +1,34 @@
+JAP_Skip_China_cat = {
+    JAP_lower_the_skill_floor = {
+        icon = generic_decision
+
+        available = {
+            has_war_with = CHI
+            AND = {
+                date > 1937.1.1
+                date < 1937.9.1
+            }
+        }
+
+        fire_only_once = yes
+        cost = 0
+
+        complete_effect = {
+            add_threat = 21
+			USA = { add_war_support = 0.1 }
+            annex_country = {
+                target = CHI
+                transfer_troops = no
+            }
+            army_experience = 400
+            air_experience = 300
+
+            # Grant experience to the Soviet Union (SOV) directly
+            SOV = {
+                army_experience = 200
+                air_experience = 100
+            }
+        }
+        }
+    }
+}

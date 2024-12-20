@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+		JAP_post_china = {
+			picture = YUG_federal_defense_council
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 3.25
+				industrial_capacity_factory = -80
+				production_speed_industrial_complex_factor = -100
+				production_speed_arms_factory_factor = -100
+				production_speed_dockyard_factor = -100
+			}
+		}
+		
+		JAP_collab_cost = {
+			picture = YUG_federal_defense_council
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+			}
+		}
+	}
+}

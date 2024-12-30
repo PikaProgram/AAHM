@@ -610,7 +610,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = SOV_industrial_modernization
-				ahead_reduction = 2
+				ahead_reduction = 0.5
 				bonus = 1.0
 				uses = 1
 				category = industry

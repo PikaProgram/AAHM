@@ -589,12 +589,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { brilliant_strategist panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger }
-			skill = 6
+			traits = { brilliant_strategist panzer_leader trickster}
+			skill = 4
 			attack_skill = 4
-			defense_skill = 7
-			planning_skill = 6
-			logistics_skill = 6
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
 			legacy_id = 5
 		}
 	}
@@ -701,12 +701,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger commando}
-			skill = 6
-			attack_skill = 5
-			defense_skill = 7
-			planning_skill = 7
-			logistics_skill = 6
+			traits = { cavalry_officer cavalry_leader}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
 			legacy_id = 11
 		}
 	}

@@ -396,12 +396,12 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { inflexible_strategist career_officer organizer cavalry_leader trait_engineer infantry_leader commando skilled_staffer }
-			skill = 6
-			attack_skill = 6
-			defense_skill = 6
-			planning_skill = 5
-			logistics_skill = 4
+			traits = { inflexible_strategist career_officer organizer}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
 			legacy_id = 0
 		}
 	}

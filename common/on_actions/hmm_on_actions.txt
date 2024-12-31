@@ -6,6 +6,12 @@ on_actions = {
 					type = convoy
 					amount = 100
 				}
+			ENG = {
+				diplomatic_relation = {
+					country = POL
+					relation = guarantee
+					active = yes
+				}
 			}
 			every_country = {
 				limit = {

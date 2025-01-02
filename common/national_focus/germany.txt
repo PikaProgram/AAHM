@@ -1905,16 +1905,23 @@ focus_tree = {
 			OR = {
 				has_resources_in_country = {
 					resource = tungsten
-					amount > 99
+					amount > 79
 					extracted = yes
 				}
 				any_allied_country = {
 					has_resources_in_country = {
 						resource = tungsten
-						amount > 99
+						amount > 79
 						extracted = yes
 					}
 				}
+                          SPR = {
+					has_resources_in_country = {
+						resource = tungsten
+						amount > 79 
+						extracted = yes
+					}
+				}	
 			}
 			OR = {
 				has_resources_in_country = {
@@ -2383,16 +2390,23 @@ focus_tree = {
 			OR = {
 				has_resources_in_country = {
 					resource = tungsten
-					amount > 99 #This needs to correspond to the Bypass values in the previous focuses
+					amount > 79 #This needs to correspond to the Bypass values in the previous focuses
 					extracted = yes
 				}
 				any_allied_country = {
 					has_resources_in_country = {
 						resource = tungsten
-						amount > 99 #This needs to correspond to the Bypass values in the previous focuses
+						amount > 79 #This needs to correspond to the Bypass values in the previous focuses
 						extracted = yes
 					}
 				}
+                                 SPR = {
+					has_resources_in_country = {
+						resource = tungsten
+						amount > 79 #This needs to correspond to the Bypass values in the previous focuses
+						extracted = yes
+					}
+				}	
 			}
 			OR = {
 				has_resources_in_country = {

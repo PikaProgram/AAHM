@@ -98,6 +98,7 @@ equipment_modules = {
 			defense = 3
 			breakthrough = 3
 			hardness = 0.02	
+			reliability = 0.1
 		}
 		dismantle_cost_ic = 1
 		
@@ -116,6 +117,7 @@ equipment_modules = {
 		add_stats = {
 			defense = 4
 			breakthrough = 4
+			reliability = 0.1
 		}
 		dismantle_cost_ic = 1
 		
@@ -124,7 +126,7 @@ equipment_modules = {
 		}
 
 		build_cost_resources = {
-			chromium = 0
+			chromium = 1
 		}
 	}
 
@@ -257,8 +259,16 @@ equipment_modules = {
 			breakthrough = 7
 			
 		}
+		forbid_equipment_type = {
+			artillery 
+			anti_tank
+		}
 		dismantle_cost_ic = 0.5
-		
+		# allowed_module_categories = {
+		# 	main_armament_slot = {
+		# 		tank_small_main	
+		# 	}
+		# }	
 		multiply_stats = {
 			
 		}
@@ -275,7 +285,15 @@ equipment_modules = {
 			breakthrough = 10
 			
 		}
-		
+		forbid_equipment_type = {
+			artillery 
+			anti_tank
+		}
+		# allowed_module_categories = {
+		# 	main_armament_slot = {
+		# 		tank_small_main	
+		# 	}
+		# }	
 		dismantle_cost_ic = 0.5
 		multiply_stats = {
 			
@@ -293,6 +311,15 @@ equipment_modules = {
 			maximum_speed = -0.1
 			breakthrough = 14
 		}
+		forbid_equipment_type = {
+			artillery 
+			anti_tank
+		}
+		# allowed_module_categories = {
+		# 	main_armament_slot = {
+		# 		tank_small_main	
+		# 	}
+		# }	
 		dismantle_cost_ic = 0.5
 		
 		multiply_stats = {
@@ -345,7 +372,12 @@ equipment_modules = {
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
+				tank_small_main
 			}
+		}
+		forbid_equipment_type = {
+			artillery 
+			anti_tank
 		}
 		add_stats = {
 			build_cost_ic = 1
@@ -354,11 +386,6 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 1
 		
-		multiply_stats = {
-			
-			hard_attack = -0.10
-			soft_attack = -0.10
-		}
 
 	}
 
@@ -370,8 +397,14 @@ equipment_modules = {
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
+				tank_small_main
 			}
 		}
+		forbid_equipment_type = {
+			artillery 
+			anti_tank
+		}
+
 		add_stats = {
 			build_cost_ic = 1.5
 			breakthrough = 16
@@ -391,8 +424,14 @@ equipment_modules = {
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
+				tank_small_main
 			}
 		}
+		forbid_equipment_type = {
+			artillery 
+			anti_tank
+		}
+
 		add_stats = {
 			build_cost_ic = 2
 			maximum_speed = -0.25
@@ -400,9 +439,6 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 1
 		
-		multiply_stats = {
-	
-		}
 
 	}
 
@@ -411,6 +447,7 @@ equipment_modules = {
 		category = tank_medium_turret_type
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
+
 
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -457,8 +494,12 @@ equipment_modules = {
 			main_armament_slot = {
 				tank_heavy_main_armament
 			}
+		}		
+		forbid_equipment_type = {
+			artillery 
+			anti_tank
 		}
-		
+
 		dismantle_cost_ic = 1
 
 		add_stats = {
@@ -467,7 +508,6 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			
 		}
 
 	}
@@ -481,19 +521,24 @@ equipment_modules = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+				tank_small_main
 			}
 		}
+		forbid_equipment_type = {
+			artillery 
+			anti_tank
+		}
+
 
 		dismantle_cost_ic = 1
 		
 		add_stats = {
-			build_cost_ic = 5.5
+			build_cost_ic = 6
 			maximum_speed = -0.25
 			breakthrough = 22
 		}
 
 		multiply_stats = {
-			
 		}
 
 	}
@@ -543,6 +588,7 @@ equipment_modules = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
 				tank_super_heavy_main_armament
+				tank_small_main
 			}
 		}
 		add_stats = {
@@ -820,9 +866,14 @@ equipment_modules = {
 
 	tank_small_cannon_2 = {
 		abbreviation = "sc2"
-		category = tank_small_main_armament
+		category = tank_small_main 
 		sfx = sfx_ui_sd_module_turret
 		parent = tank_small_cannon
+		# allowed_module_categories = {
+		# 	main_armament_slot = {
+		# 		tank_medium_main_armament
+		# 	}
+		# }
 		add_stats = {
 			soft_attack = 15
 			hard_attack = 15
@@ -1358,7 +1409,7 @@ equipment_modules = {
 			soft_attack = 5
 			hard_attack = 3
 			build_cost_ic = 3
-			reliability = -0.1
+			reliability = -0.15
 			breakthrough = 2
 		}
 		

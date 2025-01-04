@@ -507,7 +507,7 @@
 		}
 
 		available = {
-			is_subject = no
+			date > 1945.1.1
 		}
 
 		bypass = {
@@ -608,175 +608,9 @@
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_wargoal_against = INS }
-					NOT = { has_war_with = INS }
-					country_exists = INS
-					if = {
-						limit = {
-							INS = { is_subject_of = HOL }
-						}
-						OR = {
-							has_country_flag = HOL_declare_war_indies_allowed
-							HOL = { NOT = { has_completed_focus = HOL_placate_the_japanese } }
-						}
-					}
-				}
-				create_wargoal = {
-					target = INS
-					type = annex_everything
-					expire = 0
-				}
-				add_ai_strategy = {
-					type = conquer
-					id = "INS"
-					value = 200
-				}
-
-				if = {
-					limit = {
-						INS = {
-							any_core_state = {
-								NOT = {
-									is_owned_and_controlled_by = INS
-								}
-							}
-						}
-					}
-
-					INS = { #I see what you are doing you cheeky exploiter
-						every_core_state = {
-							limit = {
-								NOT = { is_owned_and_controlled_by = PREV }
-							}
-
-							ROOT = {
-								create_wargoal = {
-									target = PREV.controller
-									type = annex_everything
-									expire = 0
-								}
-							}
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					INS = { exists = no }
-					335 = {
-						CONTROLLER = {
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-					if = {
-						limit = {
-							335 = {
-								CONTROLLER = {
-									tag = HOL
-								}
-							}
-						}
-						OR = {
-							has_country_flag = HOL_declare_war_indies_allowed
-							HOL = { NOT = { has_completed_focus = HOL_placate_the_japanese } }
-						}
-					}
-				}
-				335 = {
-					OWNER = {
-						ROOT = {
-							create_wargoal = {
-								target = PREV
-								type = take_state_focus
-								expire = 0
-								generator = { 335 334 672 673 668 667 669 738 }
-							}
-							add_ai_strategy = {
-								type = conquer
-								id = PREV
-								value = 200
-							}
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_wargoal_against = MAL }
-					NOT = { has_war_with = MAL }
-					country_exists = MAL
-				}
-				create_wargoal = {
-					target = MAL
-					type = annex_everything
-					expire = 0
-				}
-				add_ai_strategy = {
-					type = conquer
-					id = "MAL"
-					value = 200
-				}
-			}
-			if = {
-				limit = {
-					MAL = { exists = no }
-					336 = {
-						CONTROLLER = {
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				336 = {
-					OWNER = {
-						ROOT = {
-							create_wargoal = {
-								target = PREV
-								type = take_state_focus
-								expire = 0
-								generator = { 336 }
-							}
-							add_ai_strategy = {
-								type = conquer
-								id = PREV
-								value = 200
-							}
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						671 = {
-							is_controlled_by = FRA
-						}
-						670 = {
-							is_controlled_by = FRA
-						}
-						286 = {
-							is_controlled_by = FRA
-						}
-						741 = {
-							is_controlled_by = FRA
-						}
-					}
-					NOT = { has_wargoal_against = FRA }
-					NOT = { has_war_with = FRA }
-				}
-				#Might be generating on states FRA does not own, but not worth the time to get it exact. Should have no gameplay impact.
-				create_wargoal = {
-					target = FRA
-					type = take_state_focus
-					expire = 0
-					generator = { 671 670 286 741 }
-				}
-			}
+			unlock_decision_tooltip = War_with_allies
+				
+			
 		}
 	}
 
@@ -788,7 +622,7 @@
 		y = 1
 		relative_position_id = JAP_strike_south_doctrine
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 3

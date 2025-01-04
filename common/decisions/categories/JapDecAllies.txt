@@ -1,0 +1,7 @@
+	JAP_Dec_Allies_cat = {
+		allowed = {
+			original_tag = JAP
+		}
+	
+		priority = 1
+	}

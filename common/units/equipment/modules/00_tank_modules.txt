@@ -508,6 +508,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 
 	}
@@ -539,6 +541,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 
 	}
@@ -569,6 +573,8 @@ equipment_modules = {
 
 		multiply_stats = {
 			breakthrough = -0.25
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 
 		can_convert_from = {
@@ -866,7 +872,7 @@ equipment_modules = {
 
 	tank_small_cannon_2 = {
 		abbreviation = "sc2"
-		category = tank_small_main 
+		category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		parent = tank_small_cannon
 		# allowed_module_categories = {
@@ -923,7 +929,9 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 20
 			hard_attack = 15
-			ap_attack = 60
+			ap_attack = 50
+			#ORIGINAL VALUE
+			#ap_attack = 60
 			build_cost_ic = 3
 			maximum_speed = -0.2
 			reliability = -0.15
@@ -952,7 +960,9 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 32
 			hard_attack = 20
-			ap_attack = 90
+			ap_attack = 80
+			#ORIGINAL VALUE
+			#ap_attack = 90
 			build_cost_ic = 4
 			maximum_speed = -0.3
 			reliability = -0.15
@@ -1118,7 +1128,9 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 20
 			hard_attack = 35
-			ap_attack = 125
+			ap_attack = 110
+			#ORIGINAL VALUE 
+			#ap_attack = 125
 			build_cost_ic = 5
 			maximum_speed = -0.3
 			reliability = -0.175

@@ -195,4 +195,5 @@ NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
 -------------------------------------------------------------------------------------------
 
-NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.3
+NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.35
+NDefines.NMilitary.PEN_VS_AVERAGE = 0.25

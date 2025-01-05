@@ -2,18 +2,6 @@ on_actions = {
 	on_startup = {
 		effect = {
 			every_country = {
-				add_equipment_to_stockpile = {
-					type = convoy
-					amount = 100
-				}
-			ENG = {
-				diplomatic_relation = {
-					country = POL
-					relation = guarantee
-					active = yes
-				}
-			}
-			every_country = {
 				limit = {
 					is_playable_country = yes
 				}
@@ -616,5 +604,4 @@ on_actions = {
 			
 		}
 	}
-}
 }
